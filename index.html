@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Y. Shang, Ph.D.</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--  NAV  -->
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="nav-name">S. Y. Shang</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--  HERO / ABOUT  -->
+<header class="hero" id="about">
+    <h1>Stephen Y. Shang, Ph.D.</h1>
+    <p class="tagline">
+        Data Scientist and ML Research at the South Florida Proton Therapy Institute.
+        Background in biomedical research training with practical experience developing machine learning systems for clinical workflows.
+    </p>
+    <div class="contact-row">
+        <span><a href="/cdn-cgi/l/email-protection#b5c6c6ddd4dbd2f5c6d3c5c1dc9bd6dad8"><span class="__cf_email__" data-cfemail="bbc8c8d3dad5dcfbc8ddcbcfd295d8d4d6">[email&#160;protected]</span></a></span>
+        <span>(561) 317-1533</span>
+        <span>South Florida</span>
+    </div>
+    <hr class="divider">
+</header>
+
+<!--  EDUCATION  -->
+<section id="education" class="fade-in">
+    <div class="section-label">Education</div>
+
+    <div class="edu-item">
+        <span class="school">Florida Atlantic University, Dept. of Physics</span>
+        <span class="location">Boca Raton, FL</span>
+        <span class="degree">Affiliate Research Professor</span>
+        <span class="year">2025 &ndash; Present</span>
+    </div>
+
+    <div class="edu-item">
+        <span class="school">Stanford University, Shriram Center &amp; ChEM-H</span>
+        <span class="location">Stanford, CA</span>
+        <span class="degree">Postdoctoral Scientist</span>
+        <span class="year">Oct 2019 &ndash; Dec 2022</span>
+    </div>
+
+    <div class="edu-item">
+        <span class="school">University of Virginia, Graduate School of Arts &amp; Sciences</span>
+        <span class="location">Charlottesville, VA</span>
+        <span class="degree">Ph.D. in Biochemistry and Molecular Genetics</span>
+        <span class="year">September 2019</span>
+    </div>
+
+    <div class="edu-item">
+        <span class="school">University of Virginia</span>
+        <span class="location">Charlottesville, VA</span>
+        <span class="degree">M.S. in Biological and Physical Sciences</span>
+        <span class="year">May 2016</span>
+    </div>
+
+    <div class="edu-item">
+        <span class="school">University of Central Florida, Burnett School of Biomedical Sciences</span>
+        <span class="location">Orlando, FL</span>
+        <span class="degree">B.S. in Molecular Biology &amp; Microbiology, Minor in Mathematics</span>
+        <span class="year">May 2013</span>
+    </div>
+</section>
+
+<!--  EXPERIENCE  -->
+<section id="experience" class="fade-in">
+    <div class="section-label">Experience</div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">South Florida Proton Therapy Institute (SFPTI)</span>
+            <span class="loc">Delray Beach, FL</span>
+            <span class="role">Machine Learning Scientist, Imaging &amp; Clinical AI</span>
+            <span class="dates">2023 &ndash; Present</span>
+        </div>
+        <ul>
+            <li>Created a full-stack IMPT treatment surface mapping system, from algorithm development and DICOM/EMR data acquisition to a production-grade triage processor and real-time patient visualizer, deployed via a locally hosted web app with full SQL integration.</li>
+            <li>Designed and implemented a custom mini U-Net architecture integrated with Sobel edge priors and super-resolution refinement to generate high-resolution patient surface contours from low-resolution CT slices.</li>
+            <li>Developed a permuted learning framework for time-series surface mapping, enabling robust resimulation prediction under data permutation and temporal shifts.</li>
+            <li>Applied time series analysis to longitudinal CBCT imaging and dose metadata to identify predictive markers for treatment adaptation decisions.</li>
+            <li>Built and optimized CBCT surface mapping algorithms, improving anatomical accuracy and processing efficiency in clinical workflows.</li>
+            <li>Created a custom decision-support model for adaptive radiotherapy, now under peer-reviewed dissemination.</li>
+            <li>Built an agentic LLM-assisted document intake system that identifies patients, validates MRN/DOB via ARIA, classifies document type, and enables UI-based approval and page splicing for ARIA upload.</li>
+            <li>Authored automation scripts in Linux/shell to streamline DICOM parsing, image preprocessing, and model inference across large datasets.</li>
+            <li>Published and presented at AAPM, ESTRO, and ASTRO.</li>
+            <li>Secured SFPTI's first lifetime donor commitment.</li>
+        </ul>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">Stanford University</span>
+            <span class="loc">Stanford, CA</span>
+            <span class="role">Postdoctoral Scholar with Dr. Stanley Lei Qi</span>
+            <span class="dates">2020 &ndash; 2022</span>
+        </div>
+        <ul>
+            <li>Applied transcriptomics and ChIP-seq analysis to assay the effectiveness of Cas-MINI and CRISPR-ECHO.</li>
+            <li>Cloned CRISPR-GO variants to manipulate chromatin structure and performed Hi-C to analyze spatiotemporal changes upon synthetic contact perturbation.</li>
+            <li>Performed FRAP and imaging to assay phase condensate dynamics of CRISPR-ECHO and related technologies.</li>
+        </ul>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">University of Virginia</span>
+            <span class="loc">Charlottesville, VA</span>
+            <span class="role">Graduate Researcher with Dr. Mazhar Adli</span>
+            <span class="dates">2014 &ndash; 2019</span>
+        </div>
+        <ul>
+            <li>Integrated transcriptomic and epigenomic data to identify superenhancer-associated genes driving platinum resistance in ovarian cancer.</li>
+            <li>Used CRISPR/Cas9 to knockout superenhancer-associated genes and performed drug resistance viability assays in multiple cell lines.</li>
+            <li>Performed ChIP-seqs to determine the scope of transcription factor binding and to identify pioneer platinum resistance-associated enhancers.</li>
+            <li>Coordinated an inter-laboratory collaboration to test synergism of BET inhibitor JQ1 and cisplatin in a xenograft model.</li>
+            <li>Performed and analyzed single cell RNA-seq on chemoresistance-associated ovarian cancer cell lines.</li>
+        </ul>
+    </div>
+</section>
+
+<!--  SKILLS  -->
+<section id="skills" class="fade-in">
+    <div class="section-label">Skills</div>
+
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h3>Programming &amp; Development</h3>
+            <div>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">pandas</span>
+                <span class="skill-tag">scikit-learn</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">SQL Server</span>
+                <span class="skill-tag">R/Bioconductor</span>
+                <span class="skill-tag">Bash</span>
+                <span class="skill-tag">Linux</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Machine Learning</h3>
+            <div>
+                <span class="skill-tag">U-Net</span>
+                <span class="skill-tag">XGBoost</span>
+                <span class="skill-tag">Random Forest</span>
+                <span class="skill-tag">Classification</span>
+                <span class="skill-tag">Regression</span>
+                <span class="skill-tag">Time-Series</span>
+                <span class="skill-tag">Survival Analysis</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Bioinformatics</h3>
+            <div>
+                <span class="skill-tag">RNA-seq</span>
+                <span class="skill-tag">ChIP-seq</span>
+                <span class="skill-tag">ATAC-seq</span>
+                <span class="skill-tag">Hi-C</span>
+                <span class="skill-tag">scRNA-seq</span>
+                <span class="skill-tag">CRISPR Screens</span>
+                <span class="skill-tag">DICOM</span>
+                <span class="skill-tag">Multi-omics</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Infrastructure</h3>
+            <div>
+                <span class="skill-tag">HPC / SLURM</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">PyInstaller</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">FHIR</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  PROJECTS  -->
+<section id="projects" class="fade-in">
+    <div class="section-label">Selected Projects</div>
+
+    <div class="project-card">
+        <h3>IMPT Surface Mapping Platform</h3>
+        <p>Surface mapping platform that integrates DICOM/EMR data, SQL pipelines, and patient visualization through Flask-based applications. Clinicians use it to track anatomical changes in real time and make evidence-driven resimulation decisions in intensity-modulated proton therapy (IMPT). Built a custom U-Net for high-resolution contouring and a permuted learning framework for robust temporal predictions.</p>
+        <div class="project-tech">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">U-Net</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">DICOM</span>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>Agentic Fax Triage &amp; Document Automation</h3>
+        <p>Built an agentic LLM-assisted document intake system that identifies patients, validates MRN/DOB via ARIA, classifies document type, and enables UI-based approval and page splicing for ARIA upload. Three-tier architecture: PyQt5 client, FastAPI server, MongoDB persistence. 88% reduction in operator document processing time across 821 documents.</p>
+        <div class="project-tech">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">PyQt5</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">FHIR R4</span>
+            <span class="skill-tag">Ollama / LLM</span>
+            <span class="skill-tag">Tesseract OCR</span>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <h3>Computational Genomics &amp; CRISPR Discovery</h3>
+        <p>Transcriptomic and epigenomic analysis across ChIP-seq, ATAC-seq, Hi-C, and single-cell RNA-seq. Identified superenhancer-associated genes and master regulators of platinum resistance in ovarian cancer. Investigated spatial epigenomic applications with CRISPR-GO at Stanford. Published in Nature Computational Science, Molecular Cell, and Cancer Research.</p>
+        <div class="project-tech">
+            <span class="skill-tag">R / Bioconductor</span>
+            <span class="skill-tag">DESeq2</span>
+            <span class="skill-tag">STAR</span>
+            <span class="skill-tag">MACS2</span>
+            <span class="skill-tag">Seurat</span>
+            <span class="skill-tag">HPC / SLURM</span>
+        </div>
+    </div>
+</section>
+
+<!--  PUBLICATIONS  -->
+<section id="publications" class="fade-in">
+    <div class="section-label">Publications</div>
+
+    <div class="pub-list">
+        <div class="pub-item">
+            <strong>Shang S,</strong> et al. <em>Permuted Learning Framework for Resimulation Decision Support in Head and Neck IMPT Surface Mapping with Immobilization Device Masking.</em> ASTRO 2025; San Francisco, CA.
+        </div>
+        <div class="pub-item">
+            <strong>Shang, S.,</strong> Kassel, M., et al. <em>Development of a Quantitative Surface Mapping Analysis Framework Involving a Robust Mask Removal Algorithm for Improved Objective Patient Setup Assessment in Head and Neck Intensity Modulated Proton Therapy.</em> AAPM 67th Annual Meeting, Washington, DC, July 2025.
+        </div>
+        <div class="pub-item">
+            Kassel, M., <strong>Shang, S.,</strong> et al. <em>A Quantitative Metric for Evaluating Treatment Plan Robustness in Intensity Modulated Proton Therapy.</em> AAPM 67th Annual Meeting, Washington, DC, July 2025.
+        </div>
+        <div class="pub-item">
+            <strong>Shang, S.,</strong> et al. <em>Integrating Laser Surface Mapping with CBCT for Enhanced Decision Support from ML Guided Resimulation Predictions.</em> Int. J. Radiat. Oncol. Biol. Phys., 120(2 Suppl), S160, October 2024. <a href="https://doi.org/10.1016/j.ijrobp.2024.07.2183">doi:10.1016/j.ijrobp.2024.07.2183</a>
+        </div>
+        <div class="pub-item">
+            <strong>Stephen Shang,</strong> et al. <em>Decision Support for Resimulation during Prostate Proton Therapy Using CBCT and Laser Surface Mapping with Machine Learning.</em> AAPM, July 2024.
+        </div>
+        <div class="pub-item">
+            <strong>Stephen Shang,</strong> et al. <em>Decision Support for Resimulation during Prostate Proton Therapy Using CBCT/Simulation-CT Surface Mapping and Machine Learning.</em> AAPM Spring Clinical Meeting, March 2024.
+        </div>
+        <div class="pub-item">
+            <strong>Stephen Shang,</strong> et al. <em>Surface Mapping with Machine Learning for Resimulation Decision Support in Prostate Proton Therapy.</em> ESTRO, May 2024.
+        </div>
+        <div class="pub-item">
+            <strong>Shang S,</strong> Cai XS, Qi LS. <em>Computation empowers CRISPR discovery and technology.</em> Nature Computational Science, Sept 2022. <a href="https://doi.org/10.1038/s43588-022-00321-1">doi:10.1038/s43588-022-00321-1</a>
+        </div>
+        <div class="pub-item">
+            Xu X, Chemparathy A, Zeng L, Kempton H, <strong>Shang S,</strong> Nakamura M, Qi LS. <em>Engineered miniature CRISPR-Cas system for mammalian genome regulation and editing.</em> Molecular Cell, Oct 2021. <a href="https://doi.org/10.1016/j.molcel.2021.08.008">doi:10.1016/j.molcel.2021.08.008</a>
+        </div>
+        <div class="pub-item">
+            Gao Y, Han M, <strong>Shang S,</strong> Wang H, Qi SL. <em>Interrogation of the dynamic properties of higher-order heterochromatin using CRISPR-dCas9.</em> Molecular Cell, Oct 2021. <a href="https://doi.org/10.1016/j.molcel.2021.07.034">doi:10.1016/j.molcel.2021.07.034</a>
+        </div>
+        <div class="pub-item">
+            <strong>Shang S,</strong> Yang J, Tufan T, et al. <em>Chemotherapy-induced distal enhancers drive transcriptional program to maintain the chemoresistant state in ovarian cancer.</em> Cancer Research, Jul 2019. <a href="https://doi.org/10.1158/0008-5472.CAN-19-0215">doi:10.1158/0008-5472.CAN-19-0215</a>
+        </div>
+        <div class="pub-item">
+            Szlachta K, Kuscu C, Adair SJ, Tufan T, Michaels AD, Mullen MG, Fisher N, <strong>Shang S,</strong> et al. <em>CRISPR knockout screening identifies combinatorial drug targets in pancreatic cancer and models cellular drug response.</em> Nature Communications, Oct 2018. <a href="https://doi.org/10.1038/s41467-018-06676-2">doi:10.1038/s41467-018-06676-2</a>
+        </div>
+        <div class="pub-item">
+            Martinez MF, Medrano S, Brown EA, Tufan T, <strong>Shang S,</strong> et al. <em>Super-enhancers maintain renin-expressing cell identity and memory to preserve multi-system homeostasis.</em> J Clin Invest, Nov 2018. <a href="https://doi.org/10.1172/JCI121361">doi:10.1172/JCI121361</a>
+        </div>
+        <div class="pub-item">
+            Drobná Z, Henriksen AD, Wolstenholme JT, et al. (incl. <strong>Shang S</strong>). <em>Transgenerational Effects of Bisphenol A on Gene Expression and DNA Methylation of Imprinted Genes in Brain.</em> Endocrinology, Jan 2018. <a href="https://doi.org/10.1210/en.2017-00730">doi:10.1210/en.2017-00730</a>
+        </div>
+        <div class="pub-item">
+            Lake A, <strong>Shang S,</strong> &amp; Kolpashchikov DM. <em>Molecular logic gates connected through DNA four-way junctions.</em> Angew Chem Int Ed Engl 49, 4459&ndash;4462 (2010). <a href="https://doi.org/10.1002/anie.200907135">doi:10.1002/anie.200907135</a>
+        </div>
+    </div>
+</section>
+
+<!--  HONORS  -->
+<section id="honors" class="fade-in">
+    <div class="section-label">Honors &amp; Awards</div>
+
+    <div class="honor-item">
+        <span class="award">ASTRO Annual Meeting, Selected Oral Presentation (Peer-reviewed top 5%)</span>
+        <span class="h-year">September 2024</span>
+    </div>
+    <div class="honor-item">
+        <span class="award">NIH T32-CA009109 Cancer Training Grant, School of Medicine, University of Virginia</span>
+        <span class="h-year">July 2014 &ndash; June 2015</span>
+    </div>
+    <div class="honor-item">
+        <span class="award">Best Research Poster Award, BMG Annual Retreat, University of Virginia</span>
+        <span class="h-year">December 2017</span>
+    </div>
+    <div class="honor-item">
+        <span class="award">Best Poster Runner-up, BMG Annual Retreat, University of Virginia</span>
+        <span class="h-year">December 2016</span>
+    </div>
+</section>
+
+<!--  CONTACT  -->
+<section id="contact" class="fade-in">
+    <div class="section-label">Contact</div>
+
+    <div class="contact-block">
+        <h3>Get in touch</h3>
+        <p>Interested in clinical AI, computational genomics, or healthcare data science.</p>
+        <div class="contact-links">
+            <a href="/cdn-cgi/l/email-protection#3744445f56595077445147435e1954585a"><span class="__cf_email__" data-cfemail="3b4848535a555c7b485d4b4f5215585456">[email&#160;protected]</span></a>
+            <a href="tel:+15613171533">(561) 317-1533</a>
+            <a href="https://github.com/mlomics" target="_blank">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Stephen Y. Shang. Built for GitHub Pages.
+</footer>
+
+<!-- ── SCROLL ANIMATIONS ── -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></scr
