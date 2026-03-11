@@ -25,24 +25,35 @@
 
 <!--  HERO / ABOUT  -->
 <header class="hero" id="about">
-    <div style="display: flex; justify-content: space-between; align-items: center; gap: 3rem; overflow: visible;">
-        <div>
-            <h1>Stephen Y. Shang, Ph.D.</h1>
-            <p class="tagline">
-                Data Scientist and ML Research at the South Florida Proton Therapy Institute.
-                Background in biomedical research training with practical experience developing machine learning systems for clinical workflows.
-            </p>
-        </div>
-        <img src="images/Stephen_Shang_Profile_Picture.jpg" alt="Stephen Y. Shang" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; flex-shrink: 0; margin-right: -80px;">
+    <div style="position: relative;">
+        <h1>Stephen Y. Shang, Ph.D.</h1>
+        <p class="tagline">
+            Data Scientist and ML Research at the South Florida Proton Therapy Institute.
+            Background in biomedical research training with practical experience developing machine learning systems for clinical workflows.
+        </p>
+        <img src="images/Stephen_Shang_Profile_Picture.jpg" alt="Stephen Y. Shang" style="width: 320px; height: 320px; border-radius: 50%; object-fit: cover; position: absolute; top: -20px; right: -160px;">
     </div>
     <div class="contact-row">
+        <a href="mailto:sshang@sfpti.com">sshang@sfpti.com</a>
+        <a href="tel:+15613171533">(561) 317-1533</a>
+        <a href="https://github.com/mlomics" target="_blank">GitHub</a>
+    </div>
+    <hr class="divider">
+</header>
 
-<!--  EDUCATION  -->
-<section id="education" class="fade-in">
-    <div class="section-label">Education</div>
+<!--  EMPLOYMENT  -->
+<section id="employment" class="fade-in">
+    <div class="section-label">Employment</div>
 
     <div class="edu-item">
-        <span class="school">Florida Atlantic University, Dept. of Physics</span>
+        <span class="school">South Florida Proton Therapy Institute, Medical Physics</span>
+        <span class="location">Delray Beach, FL</span>
+        <span class="degree">Data Scientist, ML Research</span>
+        <span class="year">2023 &ndash; Present</span>
+    </div>
+
+    <div class="edu-item">
+        <span class="school">Florida Atlantic University, Department of Physics</span>
         <span class="location">Boca Raton, FL</span>
         <span class="degree">Affiliate Research Professor</span>
         <span class="year">2026 &ndash; Present</span>
@@ -54,6 +65,111 @@
         <span class="degree">Postdoctoral Scientist</span>
         <span class="year">Oct 2019 &ndash; Dec 2022</span>
     </div>
+</section>
+
+<!--  EXPERIENCE  -->
+<section id="experience" class="fade-in">
+    <div class="section-label">Research Experience</div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">South Florida Proton Therapy Institute (SFPTI)</span>
+            <span class="loc">Delray Beach, FL</span>
+            <span class="role">Machine Learning Scientist, Imaging &amp; Clinical AI</span>
+            <span class="dates">2023 &ndash; Present</span>
+        </div>
+        <ul>
+            <li>Created a full-stack IMPT treatment surface mapping system, from algorithm development and DICOM/EMR data acquisition to a production-grade triage processor and real-time patient visualizer, deployed via a locally hosted web app with full SQL integration.</li>
+            <li>Designed and implemented a custom mini U-Net architecture integrated with Sobel edge priors and super-resolution refinement to generate high-resolution patient surface contours from low-resolution CT slices.</li>
+            <li>Developed a permuted learning framework for time-series surface mapping, enabling robust resimulation prediction under data permutation and temporal shifts.</li>
+            <li>Applied time series analysis to longitudinal CBCT imaging and dose metadata to identify predictive markers for treatment adaptation decisions.</li>
+            <li>Built and optimized CBCT surface mapping algorithms, improving anatomical accuracy and processing efficiency in clinical workflows.</li>
+            <li>Integrated AI into clinical practice, creating a custom decision-support model for adaptive radiotherapy, now under peer-reviewed dissemination.</li>
+            <li>Built an agentic LLM-assisted document intake system that identifies patients, validates MRN/DOB via ARIA, classifies document type, and enables UI-based approval and page splicing for ARIA upload.</li>
+            <li>Authored automation scripts in Linux/shell to streamline DICOM parsing, image preprocessing, and model inference across large datasets.</li>
+            <li>Published and presented at AAPM, ESTRO, and ASTRO.</li>
+            <li>Secured SFPTI's first lifetime donor commitment, translating complex technical outcomes into compelling narratives for stakeholders.</li>
+        </ul>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">Stanford University</span>
+            <span class="loc">Stanford, CA</span>
+            <span class="role">Postdoctoral Scholar with Dr. Stanley Lei Qi</span>
+            <span class="dates">2020 &ndash; 2022</span>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--muted); margin-bottom: 0.5rem; font-style: italic;">Investigating spatial epigenomic applications with CRISPR-GO.</p>
+        <ul>
+            <li>Applied transcriptomics and ChIP-seq analysis to assay the effectiveness of Cas-MINI and CRISPR-ECHO.</li>
+            <li>Cloned many CRISPR-GO variants to manipulate chromatin structure.</li>
+            <li>Performed Hi-C on CRISPR-GO to analyze spatiotemporal changes upon synthetic contact perturbation.</li>
+            <li>Performed FRAP and imaging to assay phase condensate dynamics of CRISPR-ECHO and related technologies.</li>
+        </ul>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">University of Virginia</span>
+            <span class="loc">Charlottesville, VA</span>
+            <span class="role">Graduate Student with Dr. Mazhar Adli</span>
+            <span class="dates">2014 &ndash; 2019</span>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--muted); margin-bottom: 0.5rem; font-style: italic;">Identifying master regulators of platinum resistance.</p>
+        <ul>
+            <li>Integratively coalesced transcriptomic and epigenomic data to identify superenhancer-associated genes.</li>
+            <li>Used CRISPR/Cas9 to knockout superenhancer-associated genes and performed drug resistance viability assays in multiple cell lines.</li>
+            <li>Performed ChIP-seqs to determine the scope of transcription factor binding and to identify pioneer platinum resistance-associated enhancers.</li>
+            <li>Coordinated an inter-laboratory collaboration to test synergism of BET inhibitor JQ1 and cisplatin in a xenograft model.</li>
+            <li>Performed and analyzed single cell RNA-seq on chemoresistance-associated ovarian cancer cell lines.</li>
+            <li>Helped develop computational algorithm for predicting cancer prognosis based on CRISPR viability scores and basal gene expression.</li>
+        </ul>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">University of Virginia</span>
+            <span class="loc">Charlottesville, VA</span>
+            <span class="role">Collaboration with Dr. Ariel Gomez</span>
+            <span class="dates">2017 &ndash; 2019</span>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--muted); margin-bottom: 0.5rem; font-style: italic;">Identifying genes involved in renin-associated phenotypes in mouse kidneys.</p>
+        <ul>
+            <li>Identified cell-specific enhancers from ATAC-seq data across kidney cells of multiple renin-associated phenotypes.</li>
+            <li>Combined motif analysis and pathway enrichment of ATAC and RNA-seq data to identify transcription factor drivers of the renin-associated phenotypes in tissue samples.</li>
+        </ul>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">University of Virginia</span>
+            <span class="loc">Charlottesville, VA</span>
+            <span class="role">Collaboration with Dr. Michael Scott</span>
+            <span class="dates">2015 &ndash; 2016</span>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--muted); margin-bottom: 0.5rem; font-style: italic;">Identifying genes involved in neuroplasticity during addiction.</p>
+        <ul>
+            <li>Mined ATAC-Seq to identify regions of differential chromatin accessibility as well as corresponding enriched motifs.</li>
+        </ul>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">University of Virginia</span>
+            <span class="loc">Charlottesville, VA</span>
+            <span class="role">Collaboration with Dr. Emilie Rissman</span>
+            <span class="dates">2014 &ndash; 2015</span>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--muted); margin-bottom: 0.5rem; font-style: italic;">Transgenerational inheritance of bisphenol A exposure-associated genes in mice.</p>
+        <ul>
+            <li>Generated heatmaps to visualize clusters of gene expression patterns and associated gene ontologies across two sample cohorts from different familial generations.</li>
+        </ul>
+    </div>
+</section>
+
+<!--  EDUCATION  -->
+<section id="education" class="fade-in">
+    <div class="section-label">Education</div>
 
     <div class="edu-item">
         <span class="school">University of Virginia, Graduate School of Arts &amp; Sciences</span>
@@ -74,62 +190,6 @@
         <span class="location">Orlando, FL</span>
         <span class="degree">B.S. in Molecular Biology &amp; Microbiology, Minor in Mathematics</span>
         <span class="year">May 2013</span>
-    </div>
-</section>
-
-<!--  EXPERIENCE  -->
-<section id="experience" class="fade-in">
-    <div class="section-label">Experience</div>
-
-    <div class="exp-item">
-        <div class="exp-header">
-            <span class="org">South Florida Proton Therapy Institute (SFPTI)</span>
-            <span class="loc">Delray Beach, FL</span>
-            <span class="role">Machine Learning Scientist, Imaging &amp; Clinical AI</span>
-            <span class="dates">2023 &ndash; Present</span>
-        </div>
-        <ul>
-            <li>Created a full-stack IMPT treatment surface mapping system, from algorithm development and DICOM/EMR data acquisition to a production-grade triage processor and real-time patient visualizer, deployed via a locally hosted web app with full SQL integration.</li>
-            <li>Designed and implemented a custom mini U-Net architecture integrated with Sobel edge priors and super-resolution refinement to generate high-resolution patient surface contours from low-resolution CT slices.</li>
-            <li>Developed a permuted learning framework for time-series surface mapping, enabling robust resimulation prediction under data permutation and temporal shifts.</li>
-            <li>Applied time series analysis to longitudinal CBCT imaging and dose metadata to identify predictive markers for treatment adaptation decisions.</li>
-            <li>Built and optimized CBCT surface mapping algorithms, improving anatomical accuracy and processing efficiency in clinical workflows.</li>
-            <li>Created a custom decision-support model for adaptive radiotherapy, now under peer-reviewed dissemination.</li>
-            <li>Built an agentic LLM-assisted document intake system that identifies patients, validates MRN/DOB via ARIA, classifies document type, and enables UI-based approval and page splicing for ARIA upload.</li>
-            <li>Authored automation scripts in Linux/shell to streamline DICOM parsing, image preprocessing, and model inference across large datasets.</li>
-            <li>Published and presented at AAPM, ESTRO, and ASTRO.</li>
-            <li>Secured SFPTI's first lifetime donor commitment.</li>
-        </ul>
-    </div>
-
-    <div class="exp-item">
-        <div class="exp-header">
-            <span class="org">Stanford University</span>
-            <span class="loc">Stanford, CA</span>
-            <span class="role">Postdoctoral Scholar with Dr. Stanley Lei Qi</span>
-            <span class="dates">2020 &ndash; 2022</span>
-        </div>
-        <ul>
-            <li>Applied transcriptomics and ChIP-seq analysis to assay the effectiveness of Cas-MINI and CRISPR-ECHO.</li>
-            <li>Cloned CRISPR-GO variants to manipulate chromatin structure and performed Hi-C to analyze spatiotemporal changes upon synthetic contact perturbation.</li>
-            <li>Performed FRAP and imaging to assay phase condensate dynamics of CRISPR-ECHO and related technologies.</li>
-        </ul>
-    </div>
-
-    <div class="exp-item">
-        <div class="exp-header">
-            <span class="org">University of Virginia</span>
-            <span class="loc">Charlottesville, VA</span>
-            <span class="role">Graduate Researcher with Dr. Mazhar Adli</span>
-            <span class="dates">2014 &ndash; 2019</span>
-        </div>
-        <ul>
-            <li>Integrated transcriptomic and epigenomic data to identify superenhancer-associated genes driving platinum resistance in ovarian cancer.</li>
-            <li>Used CRISPR/Cas9 to knockout superenhancer-associated genes and performed drug resistance viability assays in multiple cell lines.</li>
-            <li>Performed ChIP-seqs to determine the scope of transcription factor binding and to identify pioneer platinum resistance-associated enhancers.</li>
-            <li>Coordinated an inter-laboratory collaboration to test synergism of BET inhibitor JQ1 and cisplatin in a xenograft model.</li>
-            <li>Performed and analyzed single cell RNA-seq on chemoresistance-associated ovarian cancer cell lines.</li>
-        </ul>
     </div>
 </section>
 
@@ -291,6 +351,35 @@
     </div>
 </section>
 
+<!--  TEACHING  -->
+<section id="teaching" class="fade-in">
+    <div class="section-label">Teaching Experience</div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">Stanford University</span>
+            <span class="loc">Stanford, CA</span>
+            <span class="role">Undergraduate Trainee Mentor</span>
+            <span class="dates">2021 &ndash; 2022</span>
+        </div>
+        <ul>
+            <li>Taught basic biomedical techniques and computational analysis to an undergraduate researcher who continued to get accepted to the Stanford Bioengineering Ph.D. program.</li>
+        </ul>
+    </div>
+
+    <div class="exp-item">
+        <div class="exp-header">
+            <span class="org">Biomedical Sciences Core Course, University of Virginia</span>
+            <span class="loc">Charlottesville, VA</span>
+            <span class="role">Assistant Teacher</span>
+            <span class="dates">2015 &ndash; 2018</span>
+        </div>
+        <ul>
+            <li>Taught lectures on the structure of DNA, chromosomes, and genomes.</li>
+        </ul>
+    </div>
+</section>
+
 <!--  HONORS  -->
 <section id="honors" class="fade-in">
     <div class="section-label">Honors &amp; Awards</div>
@@ -332,5 +421,5 @@
     &copy; 2025 Stephen Y. Shang. Built for GitHub Pages.
 </footer>
 
-<!-- ── SCROLL ANIMATIONS ── -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></scr
+</body>
+</html>
