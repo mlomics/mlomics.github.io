@@ -15,11 +15,11 @@
 html { scroll-behavior: smooth; }
 
 body {
-    font-family: 'Source Sans 3', Georgia, serif;
+    font-family: Helvetica, Arial, sans-serif;
     background: var(--paper);
     color: var(--ink);
     line-height: 1.7;
-    font-size: 17px;
+    font-size: 1.2rem;
 }
 
 /* ── NAV ── */
@@ -41,11 +41,11 @@ nav .nav-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 56px;
+    height: 3.5rem;
 }
 
 nav .nav-name {
-    font-family: 'DM Serif Display', serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.15rem;
     color: var(--ink);
     text-decoration: none;
@@ -78,7 +78,7 @@ nav .nav-links a:hover { color: var(--accent); }
 }
 
 .hero h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 3.2rem;
     font-weight: 400;
     line-height: 1.15;
@@ -320,7 +320,7 @@ section + section { border-top: 1px solid var(--rule); }
 }
 
 .project-card h3 {
-    font-family: 'DM Serif Display', serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.15rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
@@ -374,7 +374,7 @@ section + section { border-top: 1px solid var(--rule); }
 }
 
 .contact-block h3 {
-    font-family: 'DM Serif Display', serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
