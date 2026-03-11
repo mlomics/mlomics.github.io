@@ -77,6 +77,14 @@ nav .nav-links a:hover { color: var(--accent); }
     margin: 0 auto;
 }
 
+.hero-content {
+    position: relative;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
 .hero h1 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 3.2rem;
@@ -92,6 +100,16 @@ nav .nav-links a:hover { color: var(--accent); }
     max-width: 600px;
     line-height: 1.7;
     margin-bottom: 1.5rem;
+}
+
+.hero-photo {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -20px;
+    right: -160px;
 }
 
 .hero .contact-row {
@@ -416,9 +434,97 @@ footer {
 }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 700px) {
-    .hero h1 { font-size: 2.2rem; }
 
+/* Tablet / medium screens */
+@media (max-width: 960px) {
+    .hero-photo {
+        width: 250px;
+        height: 250px;
+        right: -100px;
+        top: 0;
+    }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 700px) {
+    body {
+        font-size: 1.05rem;
+    }
+
+    /* Nav: stack name above links */
+    nav {
+        padding: 0 1rem;
+    }
+
+    nav .nav-inner {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0.75rem 0;
+        gap: 0.25rem;
+    }
+
+    nav .nav-name {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    nav .nav-links {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    nav .nav-links a {
+        font-size: 0.7rem;
+    }
+
+    /* Hero: photo above text */
+    .hero {
+        padding: 7rem 1.25rem 3rem;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero .tagline {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .hero-photo {
+        position: static;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero .contact-row {
+        justify-content: center;
+        gap: 0.75rem 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    .hero .divider {
+        margin-top: 2rem;
+    }
+
+    /* Sections */
+    section {
+        padding: 2.5rem 1.25rem;
+    }
+
+    /* Grids collapse to single column */
     .edu-item, .exp-header, .honor-item {
         grid-template-columns: 1fr;
     }
@@ -431,12 +537,69 @@ footer {
         text-align: left;
     }
 
-    .skills-grid { grid-template-columns: 1fr; }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 
-    nav .nav-links { gap: 1rem; }
-    nav .nav-links a { font-size: 0.75rem; }
+    /* Experience bullets */
+    .exp-item li {
+        font-size: 0.9rem;
+    }
 
-    .hero .contact-row { flex-direction: column; gap: 0.4rem; }
+    /* Publications */
+    .pub-item {
+        padding-left: 2rem;
+        font-size: 0.88rem;
+    }
+
+    /* Project cards */
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    /* Contact block */
+    .contact-block {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .hero {
+        padding: 6.5rem 1rem 2.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    nav .nav-links a {
+        font-size: 0.65rem;
+        letter-spacing: 0.04em;
+    }
+
+    .section-label {
+        font-size: 0.7rem;
+    }
 }
 
 /* ── FADE-IN ANIMATION ── */
